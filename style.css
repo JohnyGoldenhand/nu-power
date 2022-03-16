@@ -68,6 +68,7 @@ a {
 .landing {
   background-image: url("./img/Background.png");
   background-size: cover;
+  background-attachment: fixed;
   height: 95vh;
   width: 100%;
   box-sizing: border-box;
@@ -175,14 +176,16 @@ a {
 .planing__text__top {
   font-family: "KelsonSans", sans-serif;
   weight: 400;
-  size: 96px;
+  font-size: 96px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .planing__text__bottom {
   font-family: "KelsonSans", sans-serif;
   weight: 400;
-  size: 96px;
+  font-size: 96px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .planing_image {
   height: 600px;
@@ -205,6 +208,97 @@ a {
   text-align: center;
   margin-top: -50px;
   font-family: "KelsonSans", sans-serif;
+}
+
+.planing__text__top {
+  /* animation infinite scrolling */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: scrolling-right-left 40s linear infinite;
+  -webkit-animation: scrolling-right-left 40s linear infinite;
+  animation: scrolling-right-left 40s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes scrolling-right-left {
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes scrolling-right-left {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scrolling-right-left {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+/* end of the infinite scrolling-right-left */
+/* infinite scrolling left-right */
+.planing__text__bottom {
+  /* animation infinite scrolling */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: scrolling-left-right 40s linear infinite;
+  -webkit-animation: scrolling-left-right 40s linear infinite;
+  animation: scrolling-left-right 40s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes scrolling-left-right {
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes scrolling-left-right {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scrolling-left-right {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  /* end of infinite scrolling left-right */
 }
 /* END OF THE PLANING PAGE CONTENT */
 /* PREVIEW PAGE CONTENT */
