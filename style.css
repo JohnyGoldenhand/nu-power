@@ -49,13 +49,22 @@ a {
   font-family: "Barlow", sans-serif;
   margin-left: 5px;
 }
-
+.header__menu {
+  display: flex;
+}
 .header__logo {
   height: 120px;
   margin-top: -50px;
   margin-left: -100px;
 }
-
+.menu__icon {
+  height: 64px;
+  padding-left: 20px;
+  margin-top: -5px;
+}
+.menu__icon:hover {
+  cursor: pointer;
+}
 .landing {
   background-image: url("./img/Background.png");
   background-size: cover;
@@ -98,8 +107,11 @@ a {
   justify-content: center;
   margin-top: 70px;
 }
+.button:hover {
+  cursor: pointer;
+}
 /*END OF THE LANDING PAGE CONTENT */
-
+/* TRAVEL PAGE CONTENT */
 .travel {
   position: relative;
   height: 1300px;
@@ -147,7 +159,8 @@ a {
   font-size: 20px;
   font-weight: 500;
 }
-
+/*END OF THE TRAVEL PAGE CONTENT */
+/* PLANING PAGE CONTENT */
 .planing {
   height: 100vh;
 }
@@ -193,7 +206,8 @@ a {
   margin-top: -50px;
   font-family: "KelsonSans", sans-serif;
 }
-
+/* END OF THE PLANING PAGE CONTENT */
+/* PREVIEW PAGE CONTENT */
 .preview {
   height: 95vh;
   position: relative;
@@ -231,18 +245,31 @@ a {
   line-height: 30px;
   color: #767676;
 }
-
-.preview__content__image_second {
-  margin-left: 530px;
+.preview__content__image__number {
+  font-size: 360px;
+  color: white;
 }
+.preview__content__image__box {
+  display: flex;
+  justify-content: space-between;
+}
+/* END OF THE PREVIEW PAGE CONTENT */
+/* FOOTER CONTENT */
 footer {
   height: 95vh;
   background-color: #2a2a2a;
+}
+.footer__content {
+  margin-left: 255px;
+}
+.footer_top {
   display: flex;
 }
-
 .footer_text_box {
-  padding-top: 160px;
+  display: block;
+  padding-top: 140px;
+  width: 500px;
+  padding-right: 200px;
 }
 
 .footer_maint_text {
@@ -250,18 +277,18 @@ footer {
   font-family: "KelsonSans", sans-serif;
   font-size: 40px;
   font-weight: 400;
-  margin-left: 255px;
 }
-
-.footer__links {
-  width: 100%;
+.footer_links {
+  width: 50%;
+  height: 5%;
   display: flex;
-  align-items: right;
   justify-content: space-between;
+  padding-top: 175px;
+  margin-right: 200px;
+  margin-left: -100px;
 }
 .footer_link__socialmedia {
   display: inline-block;
-  padding-top: 175px;
   color: white;
   text-decoration: none;
   margin-left: 20px;
@@ -271,4 +298,65 @@ footer {
 .footer_link__language {
   color: white;
   margin-right: 10px;
+  margin-left: 30px;
+}
+
+.footer__contact {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer__contact__position__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__contact__position {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  height: 205px;
+  font-size: 20px;
+  margin-top: 130px;
+}
+.footer__contact__title {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.footer__contact__link {
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.footer__logo__container {
+  margin-right: 10%;
+  height: 260px;
+}
+.footer__bottom {
+  width: 100%;
+  color: white;
+  margin-top: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bottom__left {
+  display: flex;
+}
+.footer__bottom__right {
+  display: flex;
+  margin-right: 18%;
+}
+.footer__bottom__privarepolicy {
+  border-bottom: 1px solid;
+  margin-left: 25px;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.footer__bottom__privarepolicy:hover {
+  cursor: pointer;
+}
+.footer__bottom__company {
+  margin-left: 20px;
 }
