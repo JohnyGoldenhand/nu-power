@@ -115,7 +115,7 @@ a {
 /* TRAVEL PAGE CONTENT */
 .travel {
   position: relative;
-  height: 1300px;
+  height: 1000px;
   width: 100%;
 }
 
@@ -128,6 +128,19 @@ a {
   flex-direction: row;
   justify-content: space-between;
 }
+
+/* .travel__cursor {
+  position: absolute;
+  background-color: rgb(207, 64, 64);
+  border-radius: 50%;
+  z-index: 1000;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+} */
 .travel__content__image1 {
   margin-top: 100px;
   margin-left: 100px;
@@ -164,14 +177,16 @@ a {
 /* PLANING PAGE CONTENT */
 .planing {
   height: 100vh;
+  margin-bottom: 600px;
 }
 .planing__text {
-  height: 220px;
+  height: 520px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 76px;
+  overflow: hidden;
 }
 .planing__text__top {
   font-family: "KelsonSans", sans-serif;
@@ -190,6 +205,9 @@ a {
 .planing_image {
   height: 600px;
   width: 100%;
+  background-image: url("./img/Background-planing.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .planing__picture__text {

@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>nupower</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,6 +50,9 @@
         <!-- ************END OF THE LANDING PAGE ************ -->
         <!-- ************TRAVEL SECTION ************ -->
         <div class="travel">
+            <div class="travel__cursor">
+                <div class="cursor"></div>
+            </div>
             <div class="travel__content">
                 <img src="./img/image-travel-01.png" alt="adventure with cooking" class="travel__content__image1">
                 <div class="travel__content__right">
@@ -69,7 +71,7 @@
             </div>
             <div class="planing__picture__text">
                 <p class="planing__picture__text__paragraph">Nie marnuj czasu na planowanie i rezerwacje — zostaw to nam</p>
-                <img src="./img/Background-planing.png" alt="great travel with adventure" class="planing_image">
+                <div class="planing_image"></div>
             </div> 
         </div>
         <!-- ************END OF THE PLANING SECTION ************ -->
@@ -164,6 +166,11 @@
         </div>
             </div>
             
-
+<script type="text/javascript">
+    // const bg = document.getElementsByClassName("planing_image")
+    // window.addEventListener("scroll", function(){
+    //     bg.style.backgroundSize = +window.pageXOffset+ "%";
+    // })
+</script>
 </body>
 </html>
